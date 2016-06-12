@@ -1,0 +1,73 @@
+html, body{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to top, white, green);
+  background-repeat: no-repeat;
+}
+h1 {
+  color: rgba(255,255,255,.9);
+}
+
+.jeux{
+  text-align: center;
+  margin: auto;
+  background-image: radial-gradient(rgba(255,255,255,.6), rgba(255,255,255,.5) 50px, transparent 160px);
+  border-radius: 50%;
+  height: 250px;
+  width: 360px;
+  padding-top: 150px;
+  color:black;
+}
+
+.jeux input {
+  text-align: center;
+  margin: auto;
+  display:block;
+  height: 40px;
+}
+
+.jeux input[type="number"]{
+  border: 1px solid black;
+
+}
+
+.jeux p {
+  height: 20px;
+
+}
+
+input[type="submit"]{
+  margin-top: 5px;
+  line-height: 5%;
+  width: 30%;
+  border:1px solid white;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.1);
+  color:black;
+  box-shadow: inset 1px 2px 3px white, inset 1px -2px 3px white;
+}
+
+input[type="submit"]:hover{
+  box-shadow: inset 1px 2px 3px yellow, inset 1px -2px 3px yellow;
+}
+
+input[type="range"]{
+  width: 50%;
+}
+input[type="range"]:after,
+input[type="range"]:before {
+    position: relative;
+    top: 1em;
+    color: black;
+}
+input[type="range"]:before {
+    left:0em;
+    content: attr(min);
+    color:black;
+}
+input[type="range"]:after {
+    right: 0em;
+    content: attr(max);
+    color:black;
+}
